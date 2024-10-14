@@ -44,7 +44,7 @@ router.post('/seed', function(req,res) {
 
     // redirect to the index page
     else {
-      res.redirect('/');
+      res.redirect('index', { error: null, contacts: contacts, title: 'Contact List' });
     }
   });
 });
